@@ -31,7 +31,7 @@ class OctoflatPlugin(octoprint.plugin.AssetPlugin):
         # for details.
         return dict(
             octoflat=dict(
-                displayName="Octoflat Plugin",
+                displayName="OctoFlat Theme",
                 displayVersion=self._plugin_version,
 
                 # version check: github repository
