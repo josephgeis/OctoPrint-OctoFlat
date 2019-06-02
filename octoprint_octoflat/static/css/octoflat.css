@@ -1,17 +1,71 @@
+/* Removes button gradient. */
 .btn {
   background-image: none !important;
 }
-
+/* Removes gradient on menu bar. */
 .navbar-inner {
   background-image: none !important;
 }
 
+/* Removes gradients on hover. */
 #navbar .navbar-inner .nav > li > a:hover {
   background-image: none !important;
   border-radius: 7px;
 }
 
+/* Spaces out main menu buttons. */
 #navbar .navbar-inner .nav > li {
   margin-left: 2px;
   margin-right: 2px;
+}
+
+/* File/connection menu buttons */
+.accordion-heading-button.btn-group:hover {
+  background-image: none !important;
+  background-color: #eee;
+}
+
+/* Make sure the button highlights don't bleed through. */
+.accordion-inner {
+  background: white;
+}
+
+/* Turn the tabs into pills. */
+.nav-tabs > li > a {
+  border-radius: 4px;
+}
+
+/* Kill the border, add a background. */
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+  border: none;
+  color: #fff;
+  background-color: #006dcc;
+}
+
+/* Fix the text for the background. */
+.nav-tabs .active .dropdown-toggle .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* Round out the tab content */
+.octoprint-container .tab-content {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Kill the old tab border. */
+.nav-tabs {
+  border-bottom: unset;
+}
+
+/* Give the pills and the content some space. */
+.octoprint-container .nav {
+  margin-bottom: 2px;
+}
+
+/* Underlined links are ugly under any circumstances. */
+a:hover {
+  text-decoration: none;
 }
